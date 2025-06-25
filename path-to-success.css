@@ -1,0 +1,104 @@
+
+
+/* IMPORTED FONTS */
+@import url(https://docs.google.com/document/d/1gkbMuVJAVYbmaC4TM52B9ZI2FVMiVHGsch_A8KnOMMs/edit?tab=t.0);
+
+/* CSS REST */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --primary-color: #4CAF50; 
+    --secondary-color: #2196F3; 
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --card-background: #ffffff;
+    --border-radius: 8px;
+    --padding-base: 16px;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0 auto; 
+    max-width: 450px;
+    border-left: 1px solid #eee; 
+    border-right: 1px solid #eee; 
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-base);
+    text-align: center;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--padding-base);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+main {
+    padding: 0 var(--padding-base); 
+}
+
+section {
+    background-color: var(--card-background);
+    padding: var(--padding-base);
+    margin-bottom: var(--padding-base);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: var(--padding-base);
+    margin-top: var(--padding-base);
+    background-color: var(--primary-color);
+    color: white;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
