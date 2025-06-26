@@ -1,222 +1,231 @@
+/* CSS BY NAME */
 
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-/* CSS RESET */
+/* CSS REST */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Root Variables */
+/* ROOT VARIABLES */
 :root {
-  --teal: #4CA7C0;
-  --purple: #484FB7;
-  --lavender: #6B8FE7;
-  --yellow: #E9BB57;
-  --pink: #D9526F;
-  --dark-gray: #1E1E1E;
-  --white: #ffffff;
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
 
-  --font-kavoon: 'Kavoon', serif;
-  --font-inter: 'Inter', sans-serif;
+    --font-kavoon: 'Kavoon', serif;
+    --font-inter: 'Inter', sans-serif;
 }
 
-/* Base Styles */
+/* GLOBAL STYLES (mobile first/small) */
 body {
-  font-family: var(--font-inter);
-  background-color: var(--dark-gray);
-  color: var(--white);
-  display: flex;
-  justify-content: center;
+    font-family: var(--font-inter);
+    background-color: var(--dark-gray);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-  max-width: 450px;
-  width: 100%;
-  background-color: var(--purple);
+    max-width: 450px;
+    width: 100%;
+    background-color: var(--purple);
 }
 
 header, section, footer {
-  padding: 2rem 1.5rem;
-  text-align: center;
+    padding: 2rem 1.5rem;
+    text-align: center;
 }
 
 h1, h2 {
-  font-family: var(--font-kavoon);
+    font-family: var(--font-kavoon);
 }
 
 h1 {
-  font-size: 3em;
-  color: var(--yellow);
+    font-size: 3em;
+    color: var(--yellow);
 }
 
 h2 {
-  font-size: 2em;
-  background-color: var(--teal);
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
+    font-size: 2em;
+    background-color: var(--teal);
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 1.5em;
-  margin-bottom: 1.5rem;
-  color: var(--white);
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+    color: var(--white);
 }
 
 h4 {
-  font-size: 1.15em;
-  margin-bottom: 0.5rem;
-  color: var(--yellow);
+    font-size: 1.15em;
+    margin-bottom: 0.5rem;
+    color: var(--yellow);
 }
 
 p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 img {
-  max-width: 60px;
-  margin-bottom: 1rem;
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header p {
+    font-size: 1.1em;
+    color: var(--white);
 }
 
 /* Navigation */
 nav {
-  background-color: var(--purple);
-  padding: 1rem 1.5rem 2rem;
+    background-color: var(--purple);
+    padding: 1rem 1.5rem 2rem;
 }
 
 nav h2 {
-  font-size: 1.5em;
-  background-color: transparent;
-  margin-bottom: 1rem;
-  color: var(--white);
-  text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-align: center;
 }
 
 nav ul {
-  list-style: none;
+    list-style: none;
 }
 
 nav ul li a {
-  display: block;
-  background-color: var(--yellow);
-  color: var(--dark-gray);
-  text-decoration: none;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+    display: block;
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #d8ac46;
+    background-color: #d8ac46;
 }
 
-/* Services */
+/* Services Section */
 .services article {
-  margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .service-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-/* Why Us */
+/* Why Choose Us Section */
 .why-us {
-  background-color: var(--pink);
+    background-color: var(--pink);
 }
 
 .why-us-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .why-us-grid span {
-  background-color: var(--yellow);
-  color: var(--dark-gray);
-  padding: 1rem;
-  border-radius: 8px;
-  font-weight: bold;
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-/* Pricing */
+/* Pricing Section */
 .pricing h3 {
-  color: var(--yellow);
+    color: var(--yellow);
 }
 
 .pricing table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
 .pricing th, .pricing td {
-  padding: 0.75rem;
-  text-align: left;
+    padding: 0.75rem;
+    text-align: left;
 }
 
 .pricing th {
-  background-color: var(--lavender);
-  color: var(--dark-gray);
-  font-weight: bold;
+    background-color: var(--lavender);
+    color: var(--dark-gray);
+    font-weight: bold;
 }
 
 .pricing td {
-  background-color: #f1f1f1;
-  color: var(--dark-gray);
-  border-bottom: 2px solid var(--purple);
+    background-color: #f1f1f1;
+    color: var(--dark-gray);
+    border-bottom: 2px solid var(--purple);
 }
 
 .pricing tr:last-child td {
-  border-bottom: none;
+    border-bottom: none;
 }
 
-/* CTA */
+/* CTA Section */
 .cta {
-  background-color: var(--teal);
+    background-color: var(--teal);
 }
 
 .cta h2 {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .cta a {
-  display: inline-block;
-  background-color: var(--pink);
-  color: var(--white);
-  text-decoration: none;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+    display: inline-block;
+    background-color: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 .cta a:hover {
-  background-color: #c8425e;
+    background-color: #c8425e;
 }
 
 /* Footer */
 footer {
-  background-color: var(--dark-gray);
-  color: var(--white);
-  padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a {
-  color: var(--white);
-  text-decoration: none;
+    color: var(--white);
+    text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
